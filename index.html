@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actual Form</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: monospace;
+      }
+      #main-title {
+        text-align: center;
+        border: 2px solid salmon;
+      }
+      .actual-form {
+        display: flex;
+        justify-content: center;
+      }
+      form {
+        background-color: #4158d0;
+        background-image: linear-gradient(
+          43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%
+        );
+        color: white;
+        height: 600px;
+        width: 500px;
+        padding: 5px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      form input {
+        width: 25em;
+        border: 3px;
+        border-radius: 2px;
+        background-color: whitesmoke;
+        position: relative;
+        left: 25px;
+      }
+      form p {
+        text-align: center;
+        border: 2px solid black;
+      }
+
+      .data {
+        display: flex;
+        justify-content: center;
+        border: 5px solid royalblue;
+        position: relative;
+        top: 15px;
+        padding: 5px;
+      }
+      #sub {
+        padding: 5px;
+        position: relative;
+        top: 50px;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="main-title">Actual Form</h3>
+    <div class="actual-form">
+      <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none"
+        onload="if(submitted){window.location='github.com';}"
+      ></iframe>
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScA-qlF5VFYbmP0qnrXQGYhUSmHKuXhhL4-ySmlHdt-i_e2bw/formResponse"
+        method="post"
+        target="hidden_iframe"
+      >
+        <p>Name :-</p>
+        <input
+          type="text"
+          name="entry.1573437099"
+          autocomplete="off"
+          required
+          id="fname"
+        />
+        <br />
+        <p>Username :-</p>
+        <input
+          type="text"
+          name="entry.1644573584"
+          autocomplete="off"
+          required
+          id="uname"
+        />
+        <br />
+        <p>Github :-</p>
+        <input
+          type="text"
+          name="entry.1545994787"
+          autocomplete="off"
+          required
+          id="git"
+        />
+        <br />
+        <p>Message :-</p>
+        <input
+          type="text"
+          name="entry.827851957"
+          autocomplete="off"
+          required
+          id="mess"
+        />
+
+        <button type="submit" id="sub">Submit</button>
+      </form>
+    </div>
+
+    <div class="data">
+      <a
+        href="https://docs.google.com/spreadsheets/d/18hYyV0PYC343jX4D3GzqEwM_ENQIF54j8jh6LfWt20M/edit?usp=sharing"
+        >Spreadsheet</a
+      >
+    </div>
+  </body>
+</html>
